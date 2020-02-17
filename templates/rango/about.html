@@ -15,12 +15,11 @@
 
         <div>
             <a href="/rango/">Index</a><br />
-            <img src="{% static 'images/rango.jpg' %}"
-                 alt="Picture of Rango" />
-            <img alt="Picture of Cat.?"
-                 src="{ settings.MEDIA_URL }cat.jpg"/>
+            <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
         </div>
-
+        <div>
+            <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat." />
+        </div>
     </body>
 
 </html>
